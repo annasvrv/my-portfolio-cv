@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { NavigationComponent } from '../../../components/navigation/navigation.component';
+
 
 @Component({
   selector: 'stb-header',
-  imports: [],
+  imports: [NavigationComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
