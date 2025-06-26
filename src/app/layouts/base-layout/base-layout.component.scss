@@ -1,0 +1,10 @@
+:host {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 6px solid #a7a1d1;
+}
+
+.main {
+    flex-grow: 1;
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./styles/base-mixins" as mixins;
+@use "./styles/base-variables" as variables;
+@use "./styles/variables/pallette";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  min-width: variables.$screen-mob-s;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  background-color: rgb(var(--stb-white));
+}
+
+body {
+  max-width: 1960px;
+  margin: 0 auto;
+}
+
+.container {
+  padding-inline: 20px;
+}

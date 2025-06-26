@@ -11,6 +11,7 @@ export const routes: Routes = [
     path: '',
     component: BaseLayoutComponent,
     children: [
+      { path: '', component: HomeComponent }, // default child route
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },

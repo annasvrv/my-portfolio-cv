@@ -1,5 +1,5 @@
-<header class="header">
-  <a class="logo">
+<header class="header container">
+  <a class="logo" [routerLink]="'/'">
     <img
       src="assets/harbour-logo.png"
       alt="logo"
@@ -8,6 +8,7 @@
       class="logo__imgage"
     />
     <p class="logo__text">AnnaS</p>
-    <stb-navigation></stb-navigation>
   </a>
+
+  <stb-navigation></stb-navigation>
 </header>

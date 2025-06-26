@@ -1,3 +1,17 @@
 .header {
-    border: 1px solid #000;
+  border: 1px solid #000;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  &__text {
+    font-size: 20px;
+    // need to add correct variable
+    color: rgb(57, 57, 68);
+  }
 }

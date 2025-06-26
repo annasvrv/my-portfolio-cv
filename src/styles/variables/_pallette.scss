@@ -1,0 +1,37 @@
+:root {
+  // raw palette
+  --stb-black: 0 0 0; // #000
+  --stb-white: 255 255 255; // #fff
+
+  // sample colors
+
+  --stb-sample-100: rgb(236, 233, 230);
+  --stb-sample-150: rgb(245, 244, 242);
+  --stb-sample-200: rgb(108, 117, 125);
+  --stb-sample-300: rgb(57, 57, 68);
+  --stb-sample-400: rgb(40, 112, 148);
+  --stb-sample-500: rgb(210, 82, 53);
+
+
+
+  // brand colors
+
+  --stb-brand-100: 236 233 230; // #ece9e6
+  --stb-brand-150: 245 244 242; // #dad7d4
+  --stb-brand-200: 108 117 125; // #6c757d
+  --stb-brand-300: 57 57 68; // #393944
+  --stb-brand-blue: 40 112 148; // #287094
+  --stb-brand-red: 210 82 53; // #d25235
+
+  
+
+  // semantics
+
+  // text
+  --stb-text-primary: rgb(57, 57, 68);
+  --stb-text-secondary: rgb(108, 117, 125);
+  --stb-text-title: #287094;
+  --stb-text-light: rgb(236, 233, 230);
+  --stb-button: #d25235;
+  --stb-button-hover: rgb(57, 57, 68);
+}
