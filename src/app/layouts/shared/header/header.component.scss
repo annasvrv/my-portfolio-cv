@@ -1,3 +1,5 @@
+@use "../../../../styles/base-breakpoints" as breakpoints;
+
 .header {
   position: fixed;
   top: 0;
@@ -26,10 +28,22 @@
 
 .header-button {
   display: block;
-  padding: 10px 20px;
-  background-color: var();
+  font-size: 28px;
+  background-color: rgb(var(--stb-white));
+  border-radius: 6px;
+  border: 1px solid var(--stb-border-primary-color);
+  color: var(--stb-text-primary);
+  cursor: pointer;
+
+  @include breakpoints.tab-s {
+    display: none;
+  }
 }
 
 .header-nav {
   display: none;
+
+  @include breakpoints.tab-s {
+    display: block;
+  }
 }
