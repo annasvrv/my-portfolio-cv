@@ -2,6 +2,10 @@
 @use "./styles/base-mixins" as mixins;
 @use "./styles/base-variables" as variables;
 @use "./styles/variables/pallette";
+@use "./styles/variables/fonts";
+@use "./styles/typography";
+@use "./styles/utils";
+// @use "./styles/mixins/mixins";
 
 *,
 *::before,
@@ -16,6 +20,7 @@ body {
 
 html {
   min-width: variables.$screen-mob-s;
+  font-family: var(--stb-font-family-default);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -27,6 +32,22 @@ body {
   margin: 0 auto;
 }
 
-.container {
-  padding-inline: 20px;
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

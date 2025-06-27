@@ -1,0 +1,29 @@
+:host {
+  width: 100%;
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    padding-block: 10px;
+    color: var(--stb-text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.5s ease-out;
+
+    &:hover {
+      color: rgb(var(--stb-brand-red));
+    }
+  }
+
+  &__link.active {
+    border-bottom: 1px solid rgb(var(--stb-brand-red));
+  }
+}

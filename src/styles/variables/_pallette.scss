@@ -12,8 +12,6 @@
   --stb-sample-400: rgb(40, 112, 148);
   --stb-sample-500: rgb(210, 82, 53);
 
-
-
   // brand colors
 
   --stb-brand-100: 236 233 230; // #ece9e6
@@ -23,15 +21,18 @@
   --stb-brand-blue: 40 112 148; // #287094
   --stb-brand-red: 210 82 53; // #d25235
 
-  
-
   // semantics
 
   // text
-  --stb-text-primary: rgb(57, 57, 68);
-  --stb-text-secondary: rgb(108, 117, 125);
-  --stb-text-title: #287094;
+  --stb-text-primary: rgb(var(--stb-brand-300));
+  --stb-text-secondary: rgb(var(--stb-brand-200));
+  --stb-text-title: rgb(var(--stb-brand-blue));
+
   --stb-text-light: rgb(236, 233, 230);
   --stb-button: #d25235;
   --stb-button-hover: rgb(57, 57, 68);
+
+  // buttons
+  --stb-button-primary: rgb(var(--stb-brand-red));
+  --stb-button-primary-hover: rgb(var(--stb-brand-300));
 }

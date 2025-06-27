@@ -1,17 +1,35 @@
 .header {
-  border: 1px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
 }
 
 .logo {
   display: flex;
   gap: 8px;
   align-items: center;
+  width: 100%;
   text-decoration: none;
   color: inherit;
 
   &__text {
     font-size: 20px;
-    // need to add correct variable
-    color: rgb(57, 57, 68);
+    color: var(--stb-text-primary);
   }
+}
+
+.header-button {
+  display: block;
+  padding: 10px 20px;
+  background-color: var();
+}
+
+.header-nav {
+  display: none;
 }

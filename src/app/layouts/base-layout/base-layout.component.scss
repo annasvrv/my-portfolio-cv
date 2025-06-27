@@ -2,9 +2,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  color: var( --stb-text-primary);
   border: 6px solid #a7a1d1;
 }
 
 .main {
     flex-grow: 1;
+    padding-top: 80px;
 }
