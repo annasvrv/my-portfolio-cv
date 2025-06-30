@@ -10,9 +10,13 @@
     <p class="logo__text">AnnaS</p>
   </a>
 
-  <button class="header-button">
+  <button class="header-button" (click)="toggleSidebarMenu()">
     <span class="fa-solid fa-bars"></span>
   </button>
 
   <stb-navigation class="header-nav"></stb-navigation>
+  <stb-sidebar-menu
+    class="header-sidebar"
+    [class.open]="isOpen"
+  ></stb-sidebar-menu>
 </header>

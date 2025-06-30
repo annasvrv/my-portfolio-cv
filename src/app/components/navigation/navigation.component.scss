@@ -5,8 +5,8 @@
 .navigation {
   &__list {
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 60px;
+    justify-content: flex-end;
     list-style: none;
   }
 

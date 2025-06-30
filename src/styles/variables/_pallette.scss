@@ -27,8 +27,8 @@
   --stb-text-primary: rgb(var(--stb-brand-300));
   --stb-text-secondary: rgb(var(--stb-brand-200));
   --stb-text-title: rgb(var(--stb-brand-blue));
+  --stb-text-link-light: rgb(var(--stb-brand-100));
 
-  --stb-text-light: rgb(236, 233, 230);
   --stb-button: #d25235;
   --stb-button-hover: rgb(57, 57, 68);
 
@@ -36,7 +36,11 @@
   --stb-button-primary: rgb(var(--stb-brand-red));
   --stb-button-primary-hover: rgb(var(--stb-brand-300));
 
-  //borders
+  // borders
   --stb-border-primary-color: rgb(var(--stb-brand-300));
   --stb-border-button-color: rgb(var(--stb-brand-red));
+
+  // backgrounds
+
+  --stb-background-dark: rgb(var(--stb-brand-300));
 }

@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  // gap: 20px;
+  // justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-block: 10px;
@@ -35,6 +35,11 @@
   color: var(--stb-text-primary);
   cursor: pointer;
 
+  &:active {
+    background-color: var(--stb-background-dark);
+    color: var(--stb-text-link-light);
+  }
+
   @include breakpoints.tab-s {
     display: none;
   }
@@ -45,5 +50,18 @@
 
   @include breakpoints.tab-s {
     display: block;
+  }
+}
+// add transform animation
+.header-sidebar {
+  position: absolute;
+  top: 77px;
+  left: -360px;
+  max-width: 360px;
+  width: 100%;
+  transition: left 0.5s ease-in-out;
+
+  &.open {
+    left: 0;
   }
 }
