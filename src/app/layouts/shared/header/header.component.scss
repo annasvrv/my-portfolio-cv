@@ -52,16 +52,17 @@
     display: block;
   }
 }
-// add transform animation
+
 .header-sidebar {
   position: absolute;
   top: 77px;
-  left: -360px;
+  left: 0;
+  transform: translateX(-360px);
   max-width: 360px;
   width: 100%;
-  transition: left 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 
   &.open {
-    left: 0;
+    transform: translateX(0);
   }
 }

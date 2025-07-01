@@ -1,4 +1,4 @@
-<nav class="sidebar-menu">
+<nav class="sidebar-menu" [class.open]="isOpen">
   <ul class="sidebar-menu__list">
     <li *ngFor="let link of navLinks$ | async" class="sidebar-menu__item">
       <a

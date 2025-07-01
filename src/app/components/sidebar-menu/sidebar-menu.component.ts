@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { RouterModule } from '@angular/router';
 
@@ -10,10 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './sidebar-menu.component.scss',
 })
 export class SidebarMenuComponent {
-  isOpen = false;
+  @Input() isOpen = false;
+  @Output() close = new EventEmitter<void>();
 
   toggleSidebarMenu() {
-    this.isOpen = !this.isOpen;
+    this.close.emit();
   }
 
   navLinks$: Observable<{ url: string; name: string }[]> = of([
