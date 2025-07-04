@@ -1,0 +1,69 @@
+@use "../../../../styles/base-breakpoints" as breakpoints;
+
+.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
+  background-color: rgb(var(--stb-white));
+  box-shadow: 0px 0px 50px 2px rgba(108, 117, 125, 0.1);
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+
+  &__text {
+    font-size: 20px;
+    color: var(--stb-text-primary);
+  }
+}
+
+.header-button {
+  display: block;
+  font-size: 28px;
+  background-color: rgb(var(--stb-white));
+  border-radius: 6px;
+  border: 1px solid var(--stb-border-primary-color);
+  color: var(--stb-text-primary);
+  cursor: pointer;
+
+  &:active {
+    background-color: var(--stb-background-dark);
+    color: var(--stb-text-link-light);
+  }
+
+  @include breakpoints.tab-s {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: none;
+
+  @include breakpoints.tab-s {
+    display: block;
+  }
+}
+
+.header-sidebar {
+  position: absolute;
+  top: 77px;
+  left: 0;
+  transform: translateX(-360px);
+  max-width: 360px;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+}

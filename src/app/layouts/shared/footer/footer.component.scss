@@ -1,0 +1,30 @@
+@use "../../../../styles/base-mixins" as mixins;
+
+.footer {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  padding-block: 20px;
+  text-align: center;
+
+  &__button {
+    width: fit-content;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: var(--stb-text-title);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: color var(--stb-transition-time) ease-in-out,
+      border-color var(--stb-transition-time) ease-in-out;
+
+    @include mixins.hover {
+      color: var(--stb-text-primary);
+      border-color: var(--stb-button-hover);
+    }
+  }
+
+  &__license-link {
+    color: var(--stb-text-title);
+  }
+}

@@ -1,1 +1,26 @@
-<p>footer works!</p>
+<footer class="footer container">
+  <a href="mailto:anna.svrva@gmail.com" class="footer__button">
+    <span>anna.svrva&#64;gmail.com</span>
+  </a>
+
+  <ng-container *ngIf="mediaLinks$ | async as mediaLinks">
+    <stb-media-list [mediaLinks]="mediaLinks"></stb-media-list>
+    <p class="footer__license text-12">
+      <span>This project was made by </span>
+      <a
+        [href]="mediaLinks[0].url"
+        [title]="mediaLinks[0].name"
+        class="footer__license-link"
+        >AnnaS</a
+      >
+      <span>, and it is </span>
+      <a
+        [href]="mediaLinks[1].url"
+        [title]="mediaLinks[1].name"
+        class="footer__license-link"
+      >
+        open-sourced
+      </a>
+    </p>
+  </ng-container>
+</footer>

@@ -1,0 +1,42 @@
+:root {
+  --stb-font-family-default: "Source Serif 4", arial, serif;
+  --stb-font-family-paragraph: "Delius", arial, serif;
+  --stb-font-family-title: "Libre Baskerville", arial, serif;
+}
+
+// Libre Baskerville: CSS classes
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+//   Delius: CSS class
+
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Source Serif 4: CSS class for a variable style Use a value from 200 to 900
+
+.source-serif-4 {
+  font-family: "Source Serif 4", serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: weight;
+  //   font-style: normal;
+}

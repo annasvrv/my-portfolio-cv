@@ -1,0 +1,17 @@
+<nav class="sidebar-menu" [class.open]="isOpen">
+  <ul class="sidebar-menu__list">
+    <li *ngFor="let link of navLinks$ | async" class="sidebar-menu__item">
+      <a
+        [routerLink]="link.url"
+        routerLinkActive="active"
+        class="sidebar-menu__link"
+      >
+        {{ link.name }}
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<button class="button-close" (click)="toggleSidebarMenu()">
+  <i class="fa-solid fa-xmark"></i>
+</button>

@@ -1,1 +1,25 @@
-<p>header works!</p>
+<header class="header container">
+  <a class="logo" [routerLink]="'/'">
+    <img
+      src="assets/harbour-logo.png"
+      alt="logo"
+      width="55"
+      height="60"
+      class="logo__imgage"
+    />
+    <p class="logo__text">AnnaS</p>
+    <!-- <p class="logo__text">TextTempo</p> -->
+  </a>
+
+  <button class="header-button" (click)="toggleSidebarMenu()">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+
+  <stb-navigation class="header-nav"></stb-navigation>
+  <stb-sidebar-menu
+    class="header-sidebar"
+    [class.open]="isOpen"
+    (close)="toggleSidebarMenu()"
+  >
+  </stb-sidebar-menu>
+</header>
