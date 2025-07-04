@@ -1,4 +1,11 @@
-@use 'sass:math';
-@use 'sass:map';
-@use 'sass:list';
+@use "sass:math";
+@use "sass:map";
+@use "sass:list";
 
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}

@@ -2,10 +2,10 @@
 @use "./styles/base-mixins" as mixins;
 @use "./styles/base-variables" as variables;
 @use "./styles/variables/pallette";
+@use "./styles/variables/global-variables";
 @use "./styles/variables/fonts";
 @use "./styles/typography";
 @use "./styles/utils";
-// @use "./styles/mixins/mixins";
 
 *,
 *::before,

@@ -1,0 +1,12 @@
+<ul class="media-list">
+  <li *ngFor="let link of mediaLinks" class="media-list__item">
+    <a
+      [href]="link.url"
+      target="_blank"
+      [title]="link.name"
+      class="media-list__link"
+    >
+      <i class="fa-brands fa-{{ link.img }}"></i>
+    </a>
+  </li>
+</ul>

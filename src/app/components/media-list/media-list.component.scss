@@ -1,0 +1,29 @@
+@use "../../../styles/base-mixins" as mixins;
+
+.media-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: var(--stb-background-light);
+    transition: border-color var(--stb-transition-time) ease-in-out,
+      background-color var(--stb-transition-time) ease-in-out;
+
+    @include mixins.hover {
+      border-color: var(--stb-button-primary-hover);
+      background-color: rgb(var(--stb-white));
+    }
+  }
+
+  &__link {
+    color: var(--stb-text-primary);
+  }
+}
