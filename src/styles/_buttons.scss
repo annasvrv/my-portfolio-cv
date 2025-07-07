@@ -1,0 +1,35 @@
+@use "./base-mixins" as mixins;
+
+.button {
+  font-size: 18px;
+  border-radius: 30px;
+  border: 1px solid var(--stb-border-button-color);
+  text-decoration: none;
+
+  &__primary {
+    max-width: 180px;
+    color: var(--stb-text-link-light);
+    background-color: var(--stb-button-primary);
+    transition: border-color var(--stb-transition-time) ease-in-out,
+      color var(--stb-transition-time) ease-in-out,
+      background-color var(--stb-transition-time) ease-in-out;
+
+    @include mixins.hover {
+      color: var(--stb-button-primary-hover);
+      background-color: transparent;
+      border-color: var(--stb-button-primary-hover);
+    }
+  }
+
+  &__outline {
+    color: var(--stb-button-primary);
+  }
+
+  &--l {
+    padding: 15px 30px;
+  }
+
+  &--s {
+    padding: 10px 20px;
+  }
+}

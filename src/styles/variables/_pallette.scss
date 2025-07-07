@@ -40,8 +40,15 @@
   --stb-border-primary-color: rgb(var(--stb-brand-300));
   --stb-border-button-color: rgb(var(--stb-brand-red));
 
+  // shadows
+
+  --stb-card-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+
   // backgrounds
 
   --stb-background-dark: rgb(var(--stb-brand-300));
   --stb-background-light: rgb(var(--stb-brand-150));
+
+  // gradients
+  --stb-background-gradient: linear-gradient(to right, #22c0c32e, #fdbb2d3d);
 }

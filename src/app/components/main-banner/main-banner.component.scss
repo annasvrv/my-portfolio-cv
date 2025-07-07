@@ -1,0 +1,26 @@
+.main-banner {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  padding: 60px 80px;
+  text-align: center;
+  background: var(--stb-background-gradient);
+
+  &__content {
+    display: grid;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: var(--stb-text-title);
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+
+  &__button {
+    display: block;
+  }
+}
