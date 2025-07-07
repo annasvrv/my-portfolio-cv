@@ -1,4 +1,13 @@
-.container {
-  padding-inline: 20px;
-}
+@use "./base-breakpoints" as breakpoints;
 
+.container {
+  padding-inline: 10px;
+
+  @include breakpoints.tab-s {
+    padding-inline: 20px;
+  }
+
+  @include breakpoints.desk-l {
+    padding-inline: 200px;
+  }
+}
