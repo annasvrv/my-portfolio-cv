@@ -4,7 +4,7 @@ import { NavigationComponent } from '../../../components/navigation/navigation.c
 import { SidebarMenuComponent } from '../../../components/sidebar-menu/sidebar-menu.component';
 
 @Component({
-  selector: 'stb-header',
+  selector: 'hrb-header',
   imports: [NavigationComponent, SidebarMenuComponent, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

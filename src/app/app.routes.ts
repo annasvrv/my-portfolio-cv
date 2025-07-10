@@ -12,10 +12,10 @@ export const routes: Routes = [
     component: BaseLayoutComponent,
     children: [
       { path: '', component: HomeComponent }, // default child route
-      { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'projects', component: ProjectsComponent },
-      { path: 'contact', component: ContactComponent },
+      { path: '/home', component: HomeComponent },
+      { path: '/about', component: AboutComponent },
+      { path: '/projects', component: ProjectsComponent },
+      { path: '/contact', component: ContactComponent },
     ],
   },
   {

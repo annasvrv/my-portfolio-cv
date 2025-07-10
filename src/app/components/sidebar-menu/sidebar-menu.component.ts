@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'stb-sidebar-menu',
+  selector: 'hrb-sidebar-menu',
   imports: [CommonModule, RouterModule],
   templateUrl: './sidebar-menu.component.html',
   styleUrl: './sidebar-menu.component.scss',

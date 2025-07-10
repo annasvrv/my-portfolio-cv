@@ -4,7 +4,7 @@ import { MainBannerComponent } from '../../components/main-banner/main-banner.co
 import { CtaBannerComponent } from '../../components/cta-banner/cta-banner.component';
 
 @Component({
-  selector: 'stb-home',
+  selector: 'hrb-home',
   imports: [MainBannerComponent, RouterModule, CtaBannerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

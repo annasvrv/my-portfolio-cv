@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MediaListComponent } from '../../../components/media-list/media-list.component';
 
 @Component({
-  selector: 'stb-footer',
+  selector: 'hrb-footer',
   imports: [CommonModule, MediaListComponent, RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',

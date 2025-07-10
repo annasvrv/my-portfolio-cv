@@ -13,17 +13,17 @@
     padding: 8px 10px;
     border: 1px solid transparent;
     border-radius: 50%;
-    background-color: var(--stb-background-light);
-    transition: border-color var(--stb-transition-time) ease-in-out,
-      background-color var(--stb-transition-time) ease-in-out;
+    background-color: var(--hrb-background-light);
+    transition: border-color var(--hrb-transition-time) ease-in-out,
+      background-color var(--hrb-transition-time) ease-in-out;
 
     @include mixins.hover {
-      border-color: var(--stb-button-primary-hover);
-      background-color: rgb(var(--stb-white));
+      border-color: var(--hrb-button-primary-hover);
+      background-color: rgb(var(--hrb-white));
     }
   }
 
   &__link {
-    color: var(--stb-text-primary);
+    color: var(--hrb-text-primary);
   }
 }

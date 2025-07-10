@@ -12,19 +12,19 @@
     width: fit-content;
     padding: 5px 12px;
     text-decoration: none;
-    color: var(--stb-text-title);
+    color: var(--hrb-text-title);
     border-radius: 20px;
     border: 1px solid transparent;
-    transition: color var(--stb-transition-time) ease-in-out,
-      border-color var(--stb-transition-time) ease-in-out;
+    transition: color var(--hrb-transition-time) ease-in-out,
+      border-color var(--hrb-transition-time) ease-in-out;
 
     @include mixins.hover {
-      color: var(--stb-text-primary);
-      border-color: var(--stb-button-hover);
+      color: var(--hrb-text-primary);
+      border-color: var(--hrb-button-hover);
     }
   }
 
   &__license-link {
-    color: var(--stb-text-title);
+    color: var(--hrb-text-title);
   }
 }

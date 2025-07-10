@@ -7,6 +7,7 @@
 @use "./styles/typography";
 @use "./styles/utils";
 @use "./styles/buttons";
+@use "./styles/components/components";
 
 *,
 *::before,
@@ -21,11 +22,11 @@ body {
 
 html {
   min-width: variables.$screen-mob-s;
-  font-family: var(--stb-font-family-default);
+  font-family: var(--hrb-font-family-default);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  background-color: rgb(var(--stb-white));
+  background-color: rgb(var(--hrb-white));
 }
 
 body {

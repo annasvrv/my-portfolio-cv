@@ -18,17 +18,17 @@
 
   &__link {
     display: block;
-    color: var(--stb-text-primary);
+    color: var(--hrb-text-primary);
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    transition: color var(--stb-transition-time) ease-out;
+    transition: color var(--hrb-transition-time) ease-out;
 
     @include mixins.hover {
-      color: rgb(var(--stb-brand-red));
+      color: rgb(var(--hrb-brand-red));
     }
   }
 
   &__link.active {
-    border-bottom: 1px solid rgb(var(--stb-brand-red));
+    border-bottom: 1px solid rgb(var(--hrb-brand-red));
   }
 }

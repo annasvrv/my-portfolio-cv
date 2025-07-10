@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'stb-projects',
+  selector: 'hrb-projects',
   imports: [],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent {
-
-}
+export class ProjectsComponent {}

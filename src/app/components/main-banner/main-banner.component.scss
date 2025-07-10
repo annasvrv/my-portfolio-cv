@@ -1,22 +1,9 @@
+@use "../../../styles/base-breakpoints" as breakpoints;
+
 .main-banner {
-  display: grid;
-  gap: 30px;
-  justify-items: center;
-  padding: 60px 80px;
-  text-align: center;
-  background: var(--stb-background-gradient);
+  background: var(--hrb-background-gradient);
 
-  &__content {
-    display: grid;
-    gap: 10px;
-  }
-
-  &__title {
-    font-size: 36px;
-    color: var(--stb-text-title);
-  }
-
-  &__text {
-    font-size: 24px;
+  @include breakpoints.tab-s {
+    padding-block: 60px;
   }
 }

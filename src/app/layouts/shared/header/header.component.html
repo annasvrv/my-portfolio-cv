@@ -7,19 +7,19 @@
       height="60"
       class="logo__imgage"
     />
-    <p class="logo__text">AnnaS</p>
-    <!-- <p class="logo__text">TextTempo</p> -->
+    <!-- <p class="logo__text">AnnaS</p> -->
+    <p class="logo__text">TextTempo</p>
   </a>
 
   <button class="header-button" (click)="toggleSidebarMenu()">
     <span class="fa-solid fa-bars"></span>
   </button>
 
-  <stb-navigation class="header-nav"></stb-navigation>
-  <stb-sidebar-menu
+  <hrb-navigation class="header-nav"></hrb-navigation>
+  <hrb-sidebar-menu
     class="header-sidebar"
     [class.open]="isOpen"
     (close)="toggleSidebarMenu()"
   >
-  </stb-sidebar-menu>
+  </hrb-sidebar-menu>
 </header>

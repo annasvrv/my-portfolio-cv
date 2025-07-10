@@ -3,10 +3,10 @@
   height: 100vh;
   padding-block: 20px;
   padding-inline: 20px 60px;
-  border-top: 3px solid rgb(var(--stb-brand-200));
-  border-right: 3px solid rgb(var(--stb-brand-200));
+  border-top: 3px solid rgb(var(--hrb-brand-200));
+  border-right: 3px solid rgb(var(--hrb-brand-200));
   border-top-right-radius: 6px;
-  background-color: var(--stb-text-primary);
+  background-color: var(--hrb-text-primary);
 
   &__list {
     list-style: none;
@@ -16,18 +16,18 @@
     display: block;
     padding-inline: 10px;
     padding-block: 10px;
-    color: var(--stb-text-link-light);
+    color: var(--hrb-text-link-light);
     text-decoration: none;
     border-block: 1px solid transparent;
     transition: color 0.5s ease-out;
 
     &:hover {
-      color: rgb(var(--stb-brand-red));
+      color: rgb(var(--hrb-brand-red));
     }
   }
 
   &__link.active {
-    border-block: 1px solid rgb(var(--stb-brand-red));
+    border-block: 1px solid rgb(var(--hrb-brand-red));
   }
 }
 
@@ -37,7 +37,7 @@
   right: 20px;
   display: block;
   font-size: 20px;
-  color: var(--stb-text-link-light);
+  color: var(--hrb-text-link-light);
   border: none;
   background-color: inherit;
   cursor: pointer;

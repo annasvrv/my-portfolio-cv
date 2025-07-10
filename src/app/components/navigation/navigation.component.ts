@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'stb-navigation',
+  selector: 'hrb-navigation',
   imports: [CommonModule, RouterModule],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',

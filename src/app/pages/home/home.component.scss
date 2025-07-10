@@ -1,0 +1,9 @@
+@use "../../../styles/base-breakpoints" as breakpoints;
+
+.home-title {
+  padding-block: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}

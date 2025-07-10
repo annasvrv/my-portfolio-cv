@@ -1,0 +1,38 @@
+@use "../base-breakpoints" as breakpoints;
+
+.banner {
+  //   display: flex;
+  //   gap: 30px;
+  gap: var(--hrb-banner-gap);
+  //   flex-direction: column;
+  flex-direction: var(--hrb-banner-flex-direction);
+  //   align-items: center;
+  //   text-align: center;
+  //   padding-block: 20px;
+  padding-block: var(--hrb-banner-padding-block);
+  //   padding-inline: 20px;
+  padding-inline: var(--hrb-banner-padding-inline);
+
+  //   @include breakpoints.tab-s {
+
+  //   }
+
+  &__content {
+    display: grid;
+    gap: 10px;
+  }
+
+  &__title {
+    // font-size: 36px;
+    font-size: var(--hrb-banner-title-font-size);
+    color: var(--hrb-text-title);
+  }
+
+  &__title-text {
+    font-size: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}

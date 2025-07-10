@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'stb-contact',
+  selector: 'hrb-contact',
   imports: [],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
-export class ContactComponent {
-
-}
+export class ContactComponent {}

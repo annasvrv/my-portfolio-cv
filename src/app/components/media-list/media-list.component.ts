@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'stb-media-list',
+  selector: 'hrb-media-list',
   imports: [CommonModule, RouterModule],
   templateUrl: './media-list.component.html',
   styleUrl: './media-list.component.scss',
