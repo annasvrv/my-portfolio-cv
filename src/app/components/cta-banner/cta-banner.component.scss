@@ -1,16 +1,15 @@
 @use "../../../styles/base-breakpoints" as breakpoints;
 
 .cta-banner {
+  --hrb-banner-gap: 20px;
+  --hrb-banner-padding-block: 20px;
+  --hrb-banner-padding-inline: 20px;
+
   background-color: var(--hrb-background-light);
   border-radius: 10px;
-  gap: 10px;
 
   @include breakpoints.tab-s {
-    flex-direction: row;
+    flex-direction: var(--hrb-banner-flex-direction, row);
     justify-content: space-between;
-  }
-
-  &__title {
-    font-size: 24px;
   }
 }

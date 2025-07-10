@@ -1,21 +1,13 @@
 @use "../base-breakpoints" as breakpoints;
 
 .banner {
-  //   display: flex;
-  //   gap: 30px;
+  display: flex;
   gap: var(--hrb-banner-gap);
-  //   flex-direction: column;
-  flex-direction: var(--hrb-banner-flex-direction);
-  //   align-items: center;
-  //   text-align: center;
-  //   padding-block: 20px;
+  flex-direction: var(--hrb-banner-flex-direction, column);
+  align-items: center;
+  text-align: center;
   padding-block: var(--hrb-banner-padding-block);
-  //   padding-inline: 20px;
   padding-inline: var(--hrb-banner-padding-inline);
-
-  //   @include breakpoints.tab-s {
-
-  //   }
 
   &__content {
     display: grid;
@@ -23,16 +15,21 @@
   }
 
   &__title {
-    // font-size: 36px;
-    font-size: var(--hrb-banner-title-font-size);
+    font-size: var(--hrb-banner-title-font-size, 36px);
     color: var(--hrb-text-title);
   }
 
   &__title-text {
-    font-size: 24px;
+    font-size: var(--hrb-banner-title-text-font-size, 20px);
   }
 
   &__text {
-    font-size: 18px;
+    font-size: var(--hrb-banner-text-font-size, 16px);
+  }
+
+  @include breakpoints.tab-s {
+    --hrb-banner-title-font-size: 46px;
+    --hrb-banner-title-text-font-size: 24px;
+    --hrb-banner-text-font-size: 18px;
   }
 }

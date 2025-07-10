@@ -1,9 +1,9 @@
 @use "../../../styles/base-breakpoints" as breakpoints;
 
 .main-banner {
-  background: var(--hrb-background-gradient);
+  --hrb-banner-gap: 30px;
+  --hrb-banner-padding-block: 60px;
+  --hrb-banner-padding-inline: 20px;
 
-  @include breakpoints.tab-s {
-    padding-block: 60px;
-  }
+  background: var(--hrb-background-gradient);
 }
